@@ -16,8 +16,10 @@
 <body>
     <!-- Menú -->
     <header class="cabecera">
-        <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
+        <div class="cabecera__container">
+        <img class="cabecera__logo" src="assets/vector.png" href="https://github.com" alt="Logo">
         <h1 class="cabecera__titulo">Jose Mena Alfaro</h1>
+        </div>
         <nav class="navegacion">
             <ul class="navegacion__lista">
                 <li class="navegacion__elemento">
@@ -60,7 +62,7 @@
     <section class="sobre-mi" id="sobre-mi">
         <h2 class="sobre-mi__titulo">Sobre mí</h2>
         <p class="sobre-mi__texto">Mi nombre es Jose Mena Alfaro, estoy cursando una carrera de Ingeniería en Sistemas de Computación en la universidad Nacional de Costa Rica y poseo conocimiento en bastantes áreas de la informática, programación y electrónica.</p>
-        <p class="sobre-mi__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+        <p class="sobre-mi__texto">Me considero una persona apasionada por la tecnoogía y la resolución de problemas, a lo largo de mi formación, he trabajado en varios proyectos que me han permitido adquirir nuevas habilidades, desarrollando soluciones innovadoras y eficientes.</p>
         
     </section>
 
@@ -134,7 +136,7 @@
           
             <li class="aficiones__elemento">
                 <img class="aficiones__icono" src="assets/guitar_icon.png" alt="Tocar bajo">
-                <p class="aficiones__nombre">Tocar guitarra</p>
+                <p class="aficiones__nombre">Tocar guitarra y el bajo</p>
             </li>
             <li class="aficiones__elemento">
                 <img class="aficiones__icono" src="assets/headphones_icon.png" alt="Oír música">
@@ -143,6 +145,18 @@
             <li class="aficiones__elemento">
                 <img class="aficiones__icono" src="assets/forkspoon_icon.png" alt="Cocinar">
                 <p class="aficiones__nombre">Cocinar</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/electronica.png" alt="Electronica">
+                <p class="aficiones__nombre">Proyectos de electrónica</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/switches.png" alt="Teclados Mecánicos">
+                <p class="aficiones__nombre">Teclados Mecánicos</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/weight-gym-icon-vector-graphic-element_1597388.jpg" alt="Ir al gimnasio">
+                <p class="aficiones__nombre">Ir Gimnasio</p>
             </li>
 
         </ul>
@@ -153,24 +167,24 @@
         <h2 class="formacion__titulo">Formación académica</h2>
         <ul class="formacion__lista">
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/ufpr_logo.png" alt="UFPR">
+                <img class="formacion__icono" src="assets/una.png" alt="UNA">
                 <div>
-                    <h3 class="formacion__nombre">Análisis de datos</h3>
-                    <p class="formacion__detalle">2018 - UFPR</p>
+                    <h3 class="formacion__nombre">Ingeniería en sistemas de información</h3>
+                    <p class="formacion__detalle">En curso - UNA</p>
                 </div>
             </li>
             <li class="formacion__elemento">
                 <img class="formacion__icono" src="assets/alura_logo.png" alt="Alura">
                 <div>
-                    <h3 class="formacion__nombre">Formación en UX Design</h3>
-                    <p class="formacion__detalle">2019 - Alura</p>
+                    <h3 class="formacion__nombre">Formación en Front-End</h3>
+                    <p class="formacion__detalle">En curso - Alura</p>
                 </div>
             </li>
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/ufrj_logo.png" alt="UFRJ">
+                <img class="formacion__icono" src="assets/ctp.png" alt="CTP Atenas">
                 <div>
-                    <h3 class="formacion__nombre">Posgrado en diseño</h3>
-                    <p class="formacion__detalle">En curso - UFRJ</p>
+                    <h3 class="formacion__nombre">Técnico medio en electronica industrial</h3>
+                    <p class="formacion__detalle">2021 - Colegio Técnico profesional de Atenas</p>
                 </div>
             </li>
         </ul>
@@ -178,25 +192,51 @@
 
     <!-- Sección de Proyectos -->
     <section class="proyectos" id="proyectos">
-        <h2 class="proyectos__titulo">Experiencia Profesional</h2>
+        <h2 class="proyectos__titulo">Proyectos</h2>
         <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+            <h3 class="proyectos__nombre">Challenge Encriptador Alura</h3>
+            <image class="proyectos__imagen"src="assets/encriptador.png" alt="Alura">
+                <div class="proyectos_desc_container">
+                    <p class="proyectos__descripcion">herramienta sencilla para encriptar y desencriptar texto. Permite a los usuarios ingresar texto, encriptarlo y luego desencriptarlo de nuevo a su forma original. También incluye una función para copiar fácilmente el texto encriptado.</p>
+                <a class="proyectos__repo" href="https://github.com/jmpd3/Challenge-Encriptador">Repositorio</a>  
+                <a class ="proyectos__demo" href="https://jmpd3.github.io/Challenge-Encriptador/">Demo</a>
+                </div>
         </div>
         <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+            <h3 class="proyectos__nombre">Juego de Memoria con Alertas de JavaScript</h3>
+            <image class="proyectos__imagen"src="assets/memoria.png" alt="Memoria">
+            <div class="proyectos_desc_container">
+                <p class="proyectos__descripcion">juego de memoria hecho en JavaScript que utiliza animaciones, sonidos y sistema de puntos. Realizado para el curso de programación 4 como tarea.</p>
+            <a class="proyectos__repo" href="https://github.com/jmpd3/memoria-progra4">Repositorio</a>  
+            <a class ="proyectos__demo" href="https://jmpd3.github.io/memoria-progra4/">Demo</a>
+            </div>
+            
         </div>
+        <div class="proyectos__contenedor" id ="teclados">
+            <h3 class="proyectos__nombre">Teclados Mecánicos</h3>   
+            <div class="proyectos__imagen__container">
+                <image class="proyectos__imagen img1"src="assets/mp4b4.png" alt="Teclado">
+                <image class="proyectos__imagen img2"src="assets/nps01.png" alt="Teclado"> 
+                <image class="proyectos__imagen img3"src="assets/sd09.jpg" alt="Teclado"> 
+            </div>
+            <div class="proyectos_desc_container">
+                <p class="proyectos__descripcion">Proyectos personales de teclados mecánicos programables, soldados a mano y con carcasas impresas en 3D, hecho como pasatiempo y por encargos.</p>
+            <a class="proyectos__repo" href="https://github.com/jmpd3/memoria-progra4">Repositorio</a>  
+            </div>
+            
+        </div>
+
     </section>
 
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
         <h2 class="contacto__titulo">Contacto</h2>
+        <p class="contacto__texto">Mandame un correo a: contacto.jose.mena@gmail.com, esta función aun no está implementada</p>
         <form class="contacto__formulario">
             <input class="contacto__campo" type="text" placeholder="Nombre">
             <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
             <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
-            <button class="contacto__boton" type="submit">Enviar</button>
+            <button class="contacto__boton" type="submit" disabled>Enviar</button>
         </form>
     </section>
 

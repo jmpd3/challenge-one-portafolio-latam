@@ -42,6 +42,7 @@ a {
 .cabecera__logo {
     max-width: 25px;
     align-self: center;
+    border-radius: 50%;
 }
 
 .cabecera__titulo {
@@ -72,11 +73,14 @@ a {
 .presentacion {
     padding:  1rem 2rem; 
     text-align: justify;
-    background-color: var(--color-de-fondo-menu);          
+    background-color: var(--color-de-fondo-menu);
+        
 }
 .presentacion__foto
 {
-width: 26%    
+width: 26%;
+
+
 }
 .presentacion__titulo
 {
@@ -154,7 +158,7 @@ width: 26%
 .habilidades__elemento {
     display: flex;
     flex-direction: column; 
-    text-align: center;
+    text-align:left;
     justify-content: justify;
     background-color: white;
     gap:8px;
@@ -178,7 +182,7 @@ width: 26%
 .habilidades__icono img {
     max-width: 36px;
     height: auto;
-    margin-bottom: 0.5rem; /* Espacio entre ícono y texto */
+    margin-bottom: 0.5rem;
 }
 
 .habilidades__nombre {
@@ -186,27 +190,299 @@ width: 26%
 
 }
 /*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones__icono
+{
+    max-width:60px;
+}
+.aficiones {
+    text-align:justify;
+    width: 100%;
 
+}
+.aficiones__titulo
+{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+.aficiones__lista
+{
+    display: flex;
+    gap: 1rem;
+    flex-flow: row;
+    flex-wrap: wrap;    
+    padding: 5%;
+    justify-content: space-between;
+  
+    
+}
+.aficiones__elemento {
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+    justify-content: justify;
+    background-color: white;
+    gap:8px;
+    align-items: start;
+    border-radius: 5px;
+    height: 120px;
+    flex-grow: 1;
+    width:30%;
+    flex-grow:1;
+    padding: 16px;
+    padding-top: 32px;
+    
+}
+
+.aficiones__icono,
+.aficiones__nombre {
+    flex: 1;
+    
+}
+
+.aficiones__icono img {
+    max-width: 36px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.aficiones__nombre {
+    font-size: 1rem;
+
+}
 /*------------------------------ Formación Académica --------------------------------*/
+.formacion__icono
+{
+    max-width: 180px;
+}
+.formacion{
+    text-align:justify;
+    width: 100%;
+    background-color: var(--color-de-fondo-sec);
+    color: var(--color-subtitulo);
+
+}
+.formacion__titulo
+{
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+.formacion__lista
+{
+    display: flex;
+    gap: 1rem;
+    flex-flow: row;
+    flex-wrap: wrap;    
+    padding: 5%;
+    justify-content: space-between;
+  
+    
+}
+.formacion__elemento {
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+    justify-content: justify;
+    background-color: white;
+    gap:8px;
+    align-items: start;
+    border-radius: 5px;
+    color:black;
+    flex-grow: 1;
+    width:80%;
+    flex-grow:1;
+    padding: 16px;
+    padding-top: 32px;
+    
+}
+
+.formacion__icono,
+.formacion__nombre {
+    flex: 1;
+    
+}
+
+.formacion__icono img {
+    max-width: 36px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
 
 /*------------------------------ Sección de Proyectos --------------------------------*/
+.proyectos
+{
+    padding: 1rem 2rem;
+    text-align:justify;
+    color: black;
+}
+.proyectos__repo
+{
+    margin-top: 1rem;
+    background-color: white;
+    border: 2px solid #357ab7;
+    color: #357ab7;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 35%;
+}
+.proyectos__repo:hover {
+    background-color: #357ab7;
+    color: white;
+}
+.proyectos__demo
+{
+    background-color: #357ab7;
+    border: 1px solid #357ab7;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 35%;
+}
+.proyectos__demo:hover {
+    background-color: white;
+    border: 1px solid #357ab7;
+    color: #357ab7;
+}
 
+.proyectos__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    gap:10px;
+    
+}
+
+.proyectos__imagen__container
+{
+    width: 100%;
+    gap: 10px;
+    
+}
+.proyectos__imagen	{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
 
+input, textarea, button {
+    border: none;
+    outline: none;
+}
+section.contacto {
+    background-color: var(--color-de-fondo-sec);
+    padding: 1rem 2rem;
+    text-align: justify;
 
+}
+.contacto__titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+}
+.cabecera__container
+{
+    display: flex;
+    gap: 0.5rem;  
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-de-fondo-menu);
+}
+.contacto__campo {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f1f3f6;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacto__campo:focus {
+    background-color: #e8eff1;
+    box-shadow: 0 0 0 2px #4a90e2;
+}
+
+.contacto__campo--textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contacto__boton {
+    /*background-color: #4a90e2;
+    color: white;*/
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacto__boton:hover {
+    /*background-color: #357ab7;*/
+}
+.contacto__texto {
+    color: var(--color-subtitulo);
+    text-align: left;
+    margin-top: 1rem;
+    justify-content: left;
+}
+.contacto__boton:focus {
+    box-shadow: 0 0 0 2px #357ab7;
+}
+/*------------------------------ Footer ---------------------------------*/
+footer
+{
+    background-color: var(--color-de-fondo-menu);
+    color: var(--color-subtitulo);
+    text-align: center;
+    padding: 1rem 0;
+    
+
+}
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
 @media (min-width: 768px) {
     .cabecera {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        padding-left: 1rem; 
+        padding-right: 1rem;
     }
 
     .cabecera__logo {
-        max-width: 100px;
+        max-width:50px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         
     }
 
@@ -224,6 +500,66 @@ width: 26%
     .navegacion__elemento a {
         font-size: 1rem;
     }
+    .presentacion
+    {
+        display: flex;
+    }
+    .presentacion__titulo
+    {
+        font-size: 1.4rem;
+        order:1
+    }
+    .presentacion__subtitulo
+    {
+        font-size: 1rem;
+        order:3;
+    }   
+    .presentacion__contenedor
+    {
+        margin:10px;
+    }
+    .presentacion__foto
+    {
+        width: 100%;
+        height: 100%;
+        display:inline-block;
+        order:2;
+    }
+
+    .habilidades__elemento,.aficiones__elemento {
+        width: 25%;
+    }
+    .formacion__icono
+    {
+        max-width: 80px;
+    }
+
+    .formacion__elemento {
+        width: 25%;
+    }
+    
+    .proyectos__contenedor {
+        justify-content: left;
+        
+    }
+    .proyectos__repo,.proyectos__demo
+    {
+        width: 20%;
+    }
+    .proyectos__imagen
+    {
+        height: 50%;
+    }
+    .proyectos__imagen__container
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        height: 30%;
+    }
 }
 
 /* Pantallas grandes */
@@ -231,12 +567,12 @@ width: 26%
     /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
     .cabecera
     {
-        gap:0;
+        gap:1px;
         justify-content: space-between;
         
     }
     .cabecera__titulo {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         padding: 0;
         margin: 0;
     
@@ -244,5 +580,97 @@ width: 26%
 
     .navegacion__elemento a {
         font-size: 1.1rem;
+        display: flex;
     }
+    .navegacion__elemento
+    {
+        display: flex;
+    }
+
+
+    .presentacion
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    .presentacion__titulo
+    {
+        font-size: 2.4rem;
+        order:1
+    }
+    .presentacion__subtitulo
+    {
+        font-size: 1.5rem;
+        order:3;
+    }   
+    .presentacion__contenedor
+    {
+        margin:10px;
+        width: 50%;
+    }
+    .presentacion__foto
+    {
+        width:30%;
+        height: 30%;
+        display:inline-block;
+        order:2;
+    }
+
+    .sobre-mi
+    {
+        height: a30vh;
+    }
+    .habilidades__lista,.aficiones__lista {
+        flex-wrap: column;
+        flex-direction:row;
+        justify-content: space-between;
+        overflow: scroll;
+        flex-grow: 1;
+
+    }
+   
+    .proyectos__nombre
+    {
+        display: block;
+        width: 100%;
+        order:1;
+        
+    }
+    .proyectos__imagen
+    {
+        
+        width: 50%;
+        order:4;
+        
+    }
+    .proyectos__contenedor {
+        display: flex;
+        flex-direction: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .proyectos_desc_container
+    {
+        width: 45%;
+        order:3;
+    }
+    .proyectos__repo,.proyectos__demo
+    {
+        display: inline-block;
+        width:25%;
+
+    }
+    .proyectos__imagen__container
+    {
+       order:2;
+    }
+
+    section
+    {
+        justify-content: center;
+    }
+
 }
